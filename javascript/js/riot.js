@@ -15,7 +15,8 @@ const companies = [
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-// forEach - loop through an array, does not return anything back, just loops through data
+// ----------------------------------------------------------------------------- forEach()
+// loop through an array, does not return anything back, just loops through data
 // takes a synchronus callback function
 // can take three parameters
 //iterator created as parameter in callback, then called in the function to use
@@ -25,7 +26,9 @@ companies.forEach(function(company){
   // console.log(company.category);
 });
 
-// filter - filter things from an array
+// ----------------------------------------------------------------------------- filter()
+// filter things out from an array
+// filter ages that are greater than or equal to 21
 const canDrink = ages.filter(function(age){
   if(age >= 21){
     return true;
@@ -36,6 +39,15 @@ console.log(canDrink);
 // filter arrow function with a condition
 const canDrink2 = ages.filter(age => age >= 21);
 console.log(canDrink2);
+
+// const stillOpen = companies.filter(company => companies.end >= 2019);
+// filter out companies that are still open today
+const stillOpen = companies.filter(function(company){
+  if(company.end >= 2019){
+    return true
+  };
+});
+console.log(stillOpen);
 // map
 // sort
 // reduce
