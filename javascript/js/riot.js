@@ -69,6 +69,35 @@ console.log(eightiesCompanies);
 // filter out companies that lasted more than 10 years
 const tenur = companies.filter(company => (company.end - company.start >= 10));
 console.log(tenur);
+
 // ----------------------------------------------------------------------------- map
+// create new arrays from one array
+
+// create array of company names from companies array
+const companyNames = companies.map(function(company){
+  return company.name;
+});
+
+console.log(companyNames);
+
+// create an array of company names and end and start dates
+// company info using an es6 template string in an arrow function
+// variable syntax
+const companyInfo = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+console.log(companyInfo);
+
+// get the square root of all ages in the ages array
+const agesSquared = ages.map(age => Math.sqrt(age));
+console.log(agesSquared);
+
+// retrun an array with average of all numbers in the ages array
+const sum = ages.reduce((previous, current) => current += previous);
+const agesAvg = ages.map(age => sum / ages.length);
+console.log(agesAvg);
+
+// chaining map() Methods
+
+
+
 // sort
 // reduce
