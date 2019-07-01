@@ -96,8 +96,33 @@ const agesAvg = ages.map(age => sum / ages.length);
 console.log(agesAvg);
 
 // chaining map() Methods
+const ageMap = ages
+  .map(age => Math.sqrt(age))// get the square root of the ages in the ages array
+  .map(age => age * 2);// then, multiply each number in the array times 2
+console.log(ageMap);
+
+// ----------------------------------------------------------------------------- sort
+// return an array of companies, sorted by start year
+// compare start dates, return 1, or -1 to place companies in a sorted array
+// will compare companies for each iteration
+const sortedCompanies = companies.sort(function(company1, company2){
+  if(company1.start > company2.start){
+    return 1;
+  }else{
+    return -1;
+  }
+});
+console.log(sortedCompanies);
+
+// sort companies by end dates using an arrow function with a ternary operator(?) for a conditional statement
+const companiesEnd = companies.sort((a,b) => (a.end < b.end ? 1 : -1));
+console.log(companiesEnd);
+
+// sort through the ages from lowest to highest
+const sortAges = ages.sort((a,b) => a - b);
+console.log(sortAges);
 
 
 
-// sort
+
 // reduce
