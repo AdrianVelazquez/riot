@@ -151,3 +151,17 @@ const totalCompanyYears = companies.reduce((total, company) => total + (company.
 console.log(totalCompanyYears);
 
 // ----------------------------------------------------------------------------- combined Methods
+// using all methods, chained
+const combined = ages
+  .map(age => age * 2)// unsorted array of ages times 2
+  .filter(age => age >= 40)// filter out any age under 40
+  .sort((a,b) => a - b)// sort from lowest to highest
+  .reduce((a,b) => a + b, 0);// add them all together
+
+console.log(combined);
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// -----------------------------JS Callbacks, Promises, Async Await
+// src: https://www.youtube.com/watch?v=PoRJizFvM7s
