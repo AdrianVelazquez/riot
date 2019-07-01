@@ -1,3 +1,4 @@
+console.log("-----------------------------JS Array Methods-----------------------------")
 // -----------------------------JS Array Methods
 // src: https://www.youtube.com/watch?v=rRgD1yVwIvE
 const companies = [
@@ -159,9 +160,3 @@ const combined = ages
   .reduce((a,b) => a + b, 0);// add them all together
 
 console.log(combined);
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// -----------------------------JS Callbacks, Promises, Async Await
-// src: https://www.youtube.com/watch?v=PoRJizFvM7s
