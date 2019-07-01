@@ -122,7 +122,32 @@ console.log(companiesEnd);
 const sortAges = ages.sort((a,b) => a - b);
 console.log(sortAges);
 
+// ----------------------------------------------------------------------------- reduce
+const ageSum = ages.reduce(function(total, age){
+  return total + age;
+}, 0);
+console.log(ageSum);
 
+// add all ages and multiply times 2 - for loop
+let ageTimes = 0;
+for(let i = 0; i < ages.length; i++){
+  ageTimes += ages[i] * 2;
+};
+console.log(ageTimes);
 
+// add all ages and multiply times 2 - arrow function
+// the 0 is set as the starting point for the reduce method
+const ageMultiplied = ages.reduce((a, b) => a + (b * 2), 0);
+console.log(ageMultiplied);
 
-// reduce
+// get the range of total years for all companies
+const totalYears = companies.reduce(function(total, company){
+  return total + (company.end - company.start);
+}, 0);
+console.log(totalYears);
+
+// get the range of total years for all companies using an arrow function
+const totalCompanyYears = companies.reduce((total, company) => total + (company.end - company.start), 0);
+console.log(totalCompanyYears);
+
+// ----------------------------------------------------------------------------- combined Methods
