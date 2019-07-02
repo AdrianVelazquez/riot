@@ -14,6 +14,8 @@ NOTES
       - example: function ThisIsMyApp(){};
     - components can render other components
     - components can be split into their own files
+    - each component should be in its own seperate file
+    - name files the same name as the component name
  - JSX: Reacts proprietary wrapper around vanilla javascript
     - let you build Components using html syntax in javascript
     - you can not render 2 jsx elements next to each other without wrapping them in a container so it counts as one html element with two elements wrapped inside
@@ -24,11 +26,14 @@ NOTES
           </div>,
           document.getElementById("root")
       );
+    - you need to import react in any file you use jsx
 - Props: passes data around the app
 - State: how to maintain and change data in the app
 - Event Handling: interactivity with users
 - Life cycle methods: hook into timing events of components
 - HTTP: fetch data from an api
+- File structure: you can create a components directory and stick all of your components in there
+    - you will have to change the paths to dependent files like: the css files, and import component in the index.js file
 
 RENDER
 ======
@@ -39,7 +44,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 */
 import React from "react";
 // import logo from "./logo.svg";
-import "./App.css";
+import "../App.css";
 
 // a component function (functional component)
 function App() {
@@ -47,13 +52,19 @@ function App() {
   // you cant return two different elements next to each other withput wrapping them in a div
   // components return single jsx elements
   return (
-    <ul>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-    </ul>
+    <div>
+      <h1>Adrian Velazquez</h1>
+      <p>This is a small paragraph about me...</p>
+      <p>Places I want to visit in the future:</p>
+      <ul>
+        <li>Thailand</li>
+        <li>Germany</li>
+        <li>Spain</li>
+        <li>South Africa</li>
+      </ul>
+    </div>
   );
 }
 
+// make the component available everywhere in the application
 export default App;
