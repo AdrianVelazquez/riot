@@ -46,13 +46,14 @@ function getData(method, url){
     }
     xhr.send();
   });
-}
+};
 
 getData("GET", "https://jsonplaceholder.typicode.com/todos")
   .then(function(data){
     let todos = JSON.parse(data);
     let output = "";
 
+    // output the data to the dom
     for(let todo of todos){
       output += `
         <li>
@@ -60,7 +61,7 @@ getData("GET", "https://jsonplaceholder.typicode.com/todos")
           <p>${todo.completed}</p>
         </li>
       `;
-    }
+    };
     document.getElementById("template").innerHTML = output;
     // console.log(data);
   })
