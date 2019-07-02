@@ -50,6 +50,12 @@ RENDER
 // render() takes 2 arguments - 1: what you want to render, 2: where you want to render it
 ReactDOM.render(<App />, document.getElementById("root"));
 
+STYLING
+=======
+  - to style html elements in jsx, you cant use traditional nameing conventions like you would in a css files
+  - use className to access the dom api when styling
+  - to create a class for styling, use: className=" "
+  - you cannot add class names to functional components, only the html jsx inside of them
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
