@@ -1,12 +1,10 @@
 import React from "react";
 
-function Content() {
-  // Content component
-  return (
-    <div>
-      <main>Content</main>
-    </div>
-  );
-}
+// Content component
+const Content = () => (
+  <div>
+    <main>Content</main>
+  </div>
+);
 
 export default Content;
