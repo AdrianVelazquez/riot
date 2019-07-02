@@ -60,6 +60,8 @@ STYLING
 SCRIPTING
 =========
   - es6 allows you to use arrow functions in place of a function keyword
+  - to insert vanilla javascript into jsx components, surround them in {curly braces}
+  - you can still write vanilla javascript inside of component files, just not inside of the functional component itself without {curley braces}
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
@@ -68,27 +70,27 @@ import Footer from "./components/Footer"; // import the footer component
 import "./App.css";
 
 // a component function (functional component)
-// function App() {
-//   // return the jsx you want this component to render
-//   // you cant return two different elements next to each other withput wrapping them in a div
-//   // components return single jsx elements
-//   return (
-//     <div>
-//       <Header />
-//       <Content />
-//       <Footer />
-//     </div>
-//   );
-// }
+function App() {
+  // return the jsx you want this component to render
+  // you cant return two different elements next to each other withput wrapping them in a div
+  // components return single jsx elements
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+}
 
 // an arrow functional component
-const App = () => (
-  <div>
-    <Header />
-    <Content />
-    <Footer />
-  </div>
-);
+// const App = () => (
+//   <div>
+//     <Header />
+//     <Content />
+//     <Footer />
+//   </div>
+// );
 
 // make the component available everywhere in the application
 export default App;
