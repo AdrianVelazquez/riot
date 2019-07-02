@@ -4,7 +4,7 @@ function Content() {
   // Content component
   return (
     <div>
-      <h3>Content</h3>
+      <main>Content</main>
     </div>
   );
 }

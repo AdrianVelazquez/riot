@@ -4,7 +4,7 @@ function Header() {
   // Header component
   return (
     <div>
-      <h1>HEADER</h1>
+      <header>Header</header>
     </div>
   );
 }
