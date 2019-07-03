@@ -62,6 +62,16 @@ SCRIPTING
   - es6 allows you to use arrow functions in place of a function keyword
   - to insert vanilla javascript into jsx components, surround them in {curly braces}
   - you can still write vanilla javascript inside of component files, just not inside of the functional component itself without {curley braces}
+  - to change from jsx, to javascript, you must use curly braces, this includes styling as well
+
+STYLING
+=======
+  - jsx expects inline styiling to be an object, not a string
+  - to use inline styling, you must wrap the object in curly braces as well
+    - example: style={{color: #333}}
+  - use a standard practice to either use the css file for styling, or, to create seperate variables for styling instead and referencing the styles variable inline
+  - vendor prefixes and pseudo selectors are better off being implemented inside of a seperate style sheet because of their complex syntax by using css classes
+  - by using styles in a seperate javascript variable, you can access css propoerties and append them to elements without actually creating the styles inside of the variable and using dot syntax
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
