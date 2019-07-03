@@ -84,6 +84,7 @@ function App() {
   // return the jsx you want this component to render
   // you cant return two different elements next to each other withput wrapping them in a div
   // components return single jsx elements
+  // the parent component
   return (
     <div>
       <Header />
