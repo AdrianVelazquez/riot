@@ -9,20 +9,23 @@ const firstName = "Bob",
 
 let timeOfDay;
 
+// styling object for time
 const timeStyles = {
   fontWeight: "bold"
 };
 
+// styling object for content
 const contentStyles = {
   color: "#333",
   fontWeight: "bold"
 };
 
+// styling object for body
 const bodyStyles = {
   textAlign: "center"
 };
 
-// get time of day
+// get time of day and change time color based on time
 if (hours > 12) {
   timeOfDay = "pm";
   timeStyles.color = "red";
@@ -32,7 +35,7 @@ if (hours > 12) {
 }
 
 // Content component
-// using string templating from es6
+// using string templating from es6  and object styling
 const Content = () => (
   <div style={bodyStyles}>
     <main style={contentStyles}>Content</main>
