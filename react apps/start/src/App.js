@@ -50,13 +50,6 @@ RENDER
 // render() takes 2 arguments - 1: what you want to render, 2: where you want to render it
 ReactDOM.render(<App />, document.getElementById("root"));
 
-STYLING
-=======
-  - to style html elements in jsx, you cant use traditional nameing conventions like you would in a css files
-  - use className to access the dom api when styling
-  - to create a class for styling, use: className=" "
-  - you cannot add class names to functional components, only the html jsx inside of them
-
 SCRIPTING
 =========
   - es6 allows you to use arrow functions in place of a function keyword
@@ -72,6 +65,16 @@ STYLING
   - use a standard practice to either use the css file for styling, or, to create seperate variables for styling instead and referencing the styles variable inline
   - vendor prefixes and pseudo selectors are better off being implemented inside of a seperate style sheet because of their complex syntax by using css classes
   - by using styles in a seperate javascript variable, you can access css propoerties and append them to elements without actually creating the styles inside of the variable and using dot syntax
+  - to style html elements in jsx, you cant use traditional nameing conventions like you would in a css files
+  - use className to access the dom api when styling
+  - to create a class for styling, use: className=" "
+  - you cannot add class names to functional components, only the html jsx inside of them
+
+PROPS
+=====
+  - a prop is like the input type property, in how you can select from different types to give it different functionalities: radio, input, checkbox, etc..
+  - pops modify the way a component acts
+  - a single component can be used once, for re-usability of the code, and then change, depending on the properties it is given
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
