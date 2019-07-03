@@ -84,6 +84,8 @@ PROPS
   - to do this, you must access the object from the props parameter to render the information.
     - example: props.contact.name, etc..
   - the child component recieves all of the props in an object from the props parameter that is given data in the parent component
+  - properties are defined in the parent App component
+  - properties are instantiated in the child components with a paremeter for the component function and using objects in the html
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
