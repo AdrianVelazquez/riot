@@ -75,6 +75,15 @@ PROPS
   - a prop is like the input type property, in how you can select from different types to give it different functionalities: radio, input, checkbox, etc..
   - pops modify the way a component acts
   - a single component can be used once, for re-usability of the code, and then change, depending on the properties it is given
+  - you can pass props directly in the nested components in the parent component.
+    - example: <ContactCard name="" imgUrl="" phone="" email=""/>
+  - to use props, you must add the parameter in the component function
+  - props is an object that has properties of the component
+  - these props are passed into the called components as arguments
+  - you can pass in a single property to the nested components being called, and fill in the data as an object {{}}
+  - to do this, you must access the object from the props parameter to render the information.
+    - example: props.contact.name, etc..
+  - the child component recieves all of the props in an object from the props parameter that is given data in the parent component
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
