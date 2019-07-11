@@ -3,8 +3,7 @@ import React from "react";
 // styling object for body
 const bodyStyles = {
   textAlign: "center",
-  margin: "25px auto",
-  paddingBottom: "25px",
+  margin: "15px auto",
   width: "970px"
 };
 
@@ -14,7 +13,7 @@ const sectionStyles = {
 };
 
 // Content component
-// using string templating from es6  and object styling
+// using string templating from es6 and object styling
 const IntroCOntent = props => (
   <div style={bodyStyles}>
     <div>

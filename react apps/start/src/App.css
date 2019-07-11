@@ -1,7 +1,8 @@
 .billBoard {
   height: 100px;
   font-size: 30px;
-  background-color: #333;
+  background-color: #4267b2;
+  border-bottom: 1px solid #29487d;
   color: whitesmoke;
   text-align: center;
   justify-content: center;
@@ -9,9 +10,24 @@
   display: flex;
 }
 
+body {
+  background-color: whitesmoke;
+  color: #16161d;
+}
+
+a {
+  color: #4267b2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .footer {
   height: 100px;
-  background-color: #333;
+  background-color: #4267b2;
+  border-top: 1px solid #29487d;
   color: whitesmoke;
   margin-bottom: 15px;
   text-align: center;
