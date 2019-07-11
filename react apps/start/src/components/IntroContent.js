@@ -8,8 +8,8 @@ const bodyStyles = {
 };
 
 const sectionStyles = {
-  width: "50%",
-  float: "left"
+  // width: "50%",
+  // float: "left"
 };
 
 // Content component

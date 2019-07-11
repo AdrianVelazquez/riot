@@ -1,6 +1,6 @@
-.billBoard {
+header,
+nav {
   height: 100px;
-  font-size: 30px;
   background-color: #4267b2;
   border-bottom: 1px solid #29487d;
   color: whitesmoke;
@@ -11,13 +11,21 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f2f3f5;
   color: #16161d;
 }
 
 a {
   color: #4267b2;
   text-decoration: none;
+}
+
+nav a {
+  color: whitesmoke;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 12px 1px;
 }
 
 a:hover {
