@@ -89,7 +89,9 @@ PROPS
 */
 import React from "react";
 import Header from "./components/Header"; // import the footer component
-import Content from "./components/Content"; // import the footer component
+import IntroContent from "./components/IntroContent"; // import the footer component
+import SourceContent from "./components/SourceContent"; // import the source component
+import ComponentsContent from "./components/ComponentsContent"; // import the components component
 import Footer from "./components/Footer"; // import the footer component
 import "./App.css";
 
@@ -102,7 +104,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Content />
+      <IntroContent />
+      <SourceContent />
+      <ComponentsContent />
       <Footer />
     </div>
   );
