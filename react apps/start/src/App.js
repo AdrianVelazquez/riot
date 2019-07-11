@@ -90,8 +90,10 @@ PROPS
 import React from "react";
 import Header from "./components/Header"; // import the footer component
 import IntroContent from "./components/IntroContent"; // import the footer component
+import me from "./images/me.jpg";
 import SourceContent from "./components/SourceContent"; // import the source component
 import ComponentsContent from "./components/ComponentsContent"; // import the components component
+import JsxContent from "./components/JsxContent"; // import the jsx component
 import Footer from "./components/Footer"; // import the footer component
 import "./App.css";
 
@@ -104,9 +106,18 @@ function App() {
   return (
     <div>
       <Header />
-      <IntroContent />
+      <IntroContent
+        pic={{
+          imgUrl: me,
+          alt: "this is me, ya'll",
+          width: "250px",
+          height: "250px"
+        }}
+      />
+
       <SourceContent />
       <ComponentsContent />
+      <JsxContent />
       <Footer />
     </div>
   );
